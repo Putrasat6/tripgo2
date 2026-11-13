@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripGo | Jelajahi Indonesia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header class="header">
+    <nav class="nav wrap">
+      <a class="logo" href="index.html">Trip<span>Go.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <a class="nav-cta" href="pemesanan.html">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Bagian Hero -->
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <span class="kicker">TEMUKAN PETUALANGANMU</span>
+        <h1>Jelajahi Indonesia,<br><em>ciptakan cerita.</em></h1>
+        <p>Dari pantai tropis hingga pegunungan yang menawan. Rencanakan perjalanan seru bersama TripGo.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="destinasi.html">Jelajahi Destinasi</a>
+          <button class="btn ghost" data-modal="cara">Cara Memesan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Destinasi Populer -->
+    <section class="section wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">PILIHAN TERBAIK</span>
+          <h2>Destinasi populer</h2>
+          <p>Temukan tempat yang ingin kamu kunjungi berikutnya.</p>
+        </div>
+        <a class="more" href="destinasi.html">Lihat semua →</a>
+      </div>
+      <div class="cards" id="home-destinations"></div>
+    </section>
+
+    <!-- Bagian Promo -->
+    <section class="promo">
+      <div class="wrap promo-inner">
+        <div>
+          <span class="kicker pale">LIBURAN TANPA RIBET</span>
+          <h2>Waktunya membuat<br>kenangan baru.</h2>
+          <p>Pilih paket perjalanan yang sesuai dengan rencana dan anggaranmu.</p>
+          <a class="btn white" href="paket.html">Lihat Paket Wisata</a>
+        </div>
+        <div class="promo-mark">TG<span>.</span></div>
+      </div>
+    </section>
+
+    <!-- Bagian Fitur / Keunggulan -->
+    <section class="section wrap">
+      <div class="section-head">
+        <div>
+          <span class="kicker">KENAPA TRIPGO?</span>
+          <h2>Perjalanan lebih mudah</h2>
+        </div>
+      </div>
+      <div class="features">
+        <article>
+          <b>01</b>
+          <h3>Pilihan beragam</h3>
+          <p>Banyak pilihan destinasi dan paket perjalanan.</p>
+        </article>
+        <article>
+          <b>02</b>
+          <h3>Informasi jelas</h3>
+          <p>Informasi harga, durasi, dan fasilitas disajikan ringkas.</p>
+        </article>
+        <article>
+          <b>03</b>
+          <h3>Perencanaan praktis</h3>
+          <p>Gunakan simulasi pemesanan untuk memperkirakan biaya.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="logo light" href="index.html">Trip<span>Go.</span></a>
+        <p>Jelajahi Indonesia, ciptakan cerita.</p>
+      </div>
+      <div>
+        <strong>Jelajahi</strong>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div>
+        <strong>Hubungi Kami</strong>
+        <p>halo@tripgo.example</p>
+        <p>09.00–17.00 WIB</p>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      © <span class="year"></span> TripGo. Website simulasi untuk proyek pembelajaran.
+    </div>
+  </footer>
+
+  <!-- Komponen Pendukung (Toast & Modal) -->
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Tutup">×</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+
+  <!-- Berkas JavaScript -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinasi | TripGo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header class="header">
+    <nav class="nav wrap">
+      <a class="logo" href="index.html">Trip<span>Go.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <a class="nav-cta" href="pemesanan.html">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Banner Halaman -->
+    <section class="page-banner">
+      <div class="wrap">
+        <span class="kicker">TEMUKAN TEMPAT FAVORITMU</span>
+        <h1>Destinasi Wisata</h1>
+        <p>Inspirasi perjalanan untuk pengalaman yang tak terlupakan.</p>
+      </div>
+    </section>
+
+    <!-- Pencarian, Filter & Daftar Destinasi -->
+    <section class="section wrap">
+      <div class="toolbar">
+        <input id="search-destination" type="search" placeholder="Cari nama destinasi..." aria-label="Cari destinasi">
+        <div class="filters">
+          <button class="filter active" data-filter="Semua">Semua</button>
+          <button class="filter" data-filter="Pantai">Pantai</button>
+          <button class="filter" data-filter="Alam">Alam</button>
+          <button class="filter" data-filter="Budaya">Budaya</button>
+        </div>
+      </div>
+      <div class="cards" id="destination-list"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="logo light" href="index.html">Trip<span>Go.</span></a>
+        <p>Jelajahi Indonesia, ciptakan cerita.</p>
+      </div>
+      <div>
+        <strong>Jelajahi</strong>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div>
+        <strong>Hubungi Kami</strong>
+        <p>halo@tripgo.example</p>
+        <p>09.00–17.00 WIB</p>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      © <span class="year"></span> TripGo. Website simulasi untuk proyek pembelajaran.
+    </div>
+  </footer>
+
+  <!-- Komponen Pendukung (Toast & Modal) -->
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Tutup">×</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+
+  <!-- Berkas JavaScript -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

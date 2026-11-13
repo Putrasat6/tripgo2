@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | TripGo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header class="header">
+    <nav class="nav wrap">
+      <a class="logo" href="index.html">Trip<span>Go.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html" class="active">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <a class="nav-cta" href="pemesanan.html">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Banner Halaman -->
+    <section class="page-banner">
+      <div class="wrap">
+        <span class="kicker">KENALI TRIPGO</span>
+        <h1>Tentang Kami</h1>
+        <p>Membantu perjalanan terasa lebih mudah direncanakan.</p>
+      </div>
+    </section>
+
+    <!-- Bagian Cerita Kami & Layout Tentang -->
+    <section class="section wrap about-layout">
+      <div class="about-image"></div>
+      <div>
+        <span class="kicker">CERITA KAMI</span>
+        <h2>Setiap perjalanan punya cerita.</h2>
+        <p>TripGo merupakan konsep agen perjalanan wisata yang menyediakan informasi destinasi dan paket liburan di Indonesia. Kami ingin membantu calon wisatawan mengenal pilihan perjalanan sebelum menentukan rencana liburan.</p>
+        <p>Website ini dikembangkan sebagai proyek pembelajaran menggunakan HTML, CSS, dan JavaScript tanpa database.</p>
+        <a class="btn primary" href="destinasi.html">Temukan Destinasi</a>
+      </div>
+    </section>
+
+    <!-- Bagian Nilai Kami -->
+    <section class="soft-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="kicker">NILAI KAMI</span>
+            <h2>Yang kami utamakan</h2>
+          </div>
+        </div>
+        <div class="features">
+          <article>
+            <b>01</b>
+            <h3>Kemudahan</h3>
+            <p>Informasi perjalanan mudah ditemukan dan dipahami.</p>
+          </article>
+          <article>
+            <b>02</b>
+            <h3>Transparansi</h3>
+            <p>Estimasi harga dan fasilitas ditampilkan dengan jelas.</p>
+          </article>
+          <article>
+            <b>03</b>
+            <h3>Eksplorasi</h3>
+            <p>Mendorong wisatawan mengenal keindahan Indonesia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="logo light" href="index.html">Trip<span>Go.</span></a>
+        <p>Jelajahi Indonesia, ciptakan cerita.</p>
+      </div>
+      <div>
+        <strong>Jelajahi</strong>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div>
+        <strong>Hubungi Kami</strong>
+        <p>halo@tripgo.example</p>
+        <p>09.00–17.00 WIB</p>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      © <span class="year"></span> TripGo. Website simulasi untuk proyek pembelajaran.
+    </div>
+  </footer>
+
+  <!-- Komponen Pendukung (Toast & Modal) -->
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Tutup">×</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+
+  <!-- Berkas JavaScript -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan | TripGo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header class="header">
+    <nav class="nav wrap">
+      <a class="logo" href="index.html">Trip<span>Go.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <a class="nav-cta" href="pemesanan.html">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Banner Halaman -->
+    <section class="page-banner">
+      <div class="wrap">
+        <span class="kicker">MULAI PETUALANGANMU</span>
+        <h1>Simulasi Pemesanan</h1>
+        <p>Isi data berikut untuk melihat perkiraan biaya perjalanan.</p>
+      </div>
+    </section>
+
+    <!-- Bagian Formulir Pemesanan & Panduan -->
+    <section class="section wrap booking-layout">
+      <!-- Formulir Pemesanan -->
+      <form class="form-card" id="booking-form">
+        <h2>Data Perjalanan</h2>
+
+        <label>
+          Nama lengkap
+          <input id="booking-name" required placeholder="Masukkan nama kamu">
+        </label>
+
+        <label>
+          Email
+          <input id="booking-email" type="email" required placeholder="nama@email.com">
+        </label>
+
+        <label>
+          Pilih destinasi
+          <select id="booking-destination" required></select>
+        </label>
+
+        <label>
+          Pilih paket
+          <select id="booking-package" required></select>
+        </label>
+
+        <div class="form-row">
+          <label>
+            Tanggal keberangkatan
+            <input id="booking-date" type="date" required>
+          </label>
+          <label>
+            Jumlah peserta
+            <input id="booking-people" type="number" min="1" max="20" value="2" required>
+          </label>
+        </div>
+
+        <div class="estimate">
+          <span>Perkiraan total biaya</span>
+          <strong id="estimate-total">Rp0</strong>
+        </div>
+
+        <button class="btn primary full" type="submit">Kirim Simulasi Pemesanan</button>
+        <p class="fine">Pemesanan ini hanya simulasi. Tidak ada pembayaran dan tidak ada reservasi sungguhan.</p>
+      </form>
+
+      <!-- Sidebar Panduan & Kalkulator -->
+      <aside class="booking-aside">
+        <h3>Bagaimana cara kerjanya?</h3>
+        <ol>
+          <li>Pilih destinasi dan paket wisata.</li>
+          <li>Masukkan tanggal dan jumlah peserta.</li>
+          <li>Lihat estimasi biaya secara otomatis.</li>
+          <li>Kirim formulir untuk melihat konfirmasi demo.</li>
+        </ol>
+        <button class="btn outline full" data-modal="kalkulator">Buka Kalkulator Cepat</button>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="logo light" href="index.html">Trip<span>Go.</span></a>
+        <p>Jelajahi Indonesia, ciptakan cerita.</p>
+      </div>
+      <div>
+        <strong>Jelajahi</strong>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div>
+        <strong>Hubungi Kami</strong>
+        <p>halo@tripgo.example</p>
+        <p>09.00–17.00 WIB</p>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      © <span class="year"></span> TripGo. Website simulasi untuk proyek pembelajaran.
+    </div>
+  </footer>
+
+  <!-- Komponen Pendukung (Toast & Modal) -->
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Tutup">×</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+
+  <!-- Berkas JavaScript -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

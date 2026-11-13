@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | TripGo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header class="header">
+    <nav class="nav wrap">
+      <a class="logo" href="index.html">Trip<span>Go.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </div>
+      <a class="nav-cta" href="pemesanan.html">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Banner Halaman -->
+    <section class="page-banner">
+      <div class="wrap">
+        <span class="kicker">KAMI SIAP MEMBANTU</span>
+        <h1>Hubungi Kami</h1>
+        <p>Sampaikan pertanyaan atau pesan untuk tim TripGo.</p>
+      </div>
+    </section>
+
+    <!-- Bagian Informasi Kontak & Formulir -->
+    <section class="section wrap contact-layout">
+      <!-- Informasi Kontak -->
+      <div>
+        <span class="kicker">INFORMASI KONTAK</span>
+        <h2>Mari rencanakan<br>perjalananmu.</h2>
+        <div class="contact-detail">
+          <b>✉ Email</b>
+          <p>halo@tripgo.example</p>
+        </div>
+        <div class="contact-detail">
+          <b>◷ Jam layanan</b>
+          <p>Senin–Minggu, 09.00–17.00 WIB</p>
+        </div>
+        <div class="contact-detail">
+          <b>⌖ Alamat kantor</b>
+          <p>Jl. Wisata Nusantara No. 10, Indonesia</p>
+        </div>
+        <p class="fine">Informasi kontak di atas merupakan data contoh untuk proyek.</p>
+      </div>
+
+      <!-- Formulir Pesan -->
+      <form class="form-card" id="contact-form">
+        <h2>Kirim Pesan</h2>
+        
+        <label>
+          Nama
+          <input id="contact-name" required placeholder="Nama kamu">
+        </label>
+        
+        <label>
+          Email
+          <input id="contact-email" type="email" required placeholder="nama@email.com">
+        </label>
+        
+        <label>
+          Subjek
+          <input id="contact-subject" required placeholder="Topik pesan">
+        </label>
+        
+        <label>
+          Pesan
+          <textarea id="contact-message" rows="5" required placeholder="Tulis pesan kamu..."></textarea>
+        </label>
+        
+        <button class="btn primary full" type="submit">Kirim Pesan</button>
+        <p class="fine">Formulir ini hanya simulasi dan tidak mengirim data ke server.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="logo light" href="index.html">Trip<span>Go.</span></a>
+        <p>Jelajahi Indonesia, ciptakan cerita.</p>
+      </div>
+      <div>
+        <strong>Jelajahi</strong>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="paket.html">Paket Wisata</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div>
+        <strong>Hubungi Kami</strong>
+        <p>halo@tripgo.example</p>
+        <p>09.00–17.00 WIB</p>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      © <span class="year"></span> TripGo. Website simulasi untuk proyek pembelajaran.
+    </div>
+  </footer>
+
+  <!-- Komponen Pendukung (Toast & Modal) -->
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Tutup">×</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+
+  <!-- Berkas JavaScript -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
