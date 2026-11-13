@@ -42,20 +42,23 @@ function setupBooking() {
 
   date.min = new Date().toISOString().split("T")[0];
 
-  function update() {
-    const p = PACKAGES.find(x => x.id === pack.value);
-    const n = Math.max(1, Math.min(20, Number(people.value) || 1));
-    const d = Math.max(1, Math.min(30, Number(days.value) || 1));
+  function update(){
+  const p = PACKAGES.find(x => x.id === pack.value);
 
-    const total = (p?.price || 0) * n * d;
+  const n = Math.max(1, Number(people.value) || 1);
+  const d = Math.max(1, Number(days.value) || 1);
 
-    $("#estimate-total").textContent = formatRupiah(total);
-  }
+  const total = (p?.price || 0) * n * d;
+
+  $("#estimate-total").textContent = formatRupiah(total);
+}
 
   [dest, pack, people, days].forEach(el => {
-    el.addEventListener("input", update);
-    el.addEventListener("change", update);
-  });
+  el.addEventListener("input", update);
+  el.addEventListener("change", update);
+});
+
+update();
 
   update();
 
